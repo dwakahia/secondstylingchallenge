@@ -525,14 +525,15 @@ body, html {
   text-align: center;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .more-products-title {
     text-align: left !important;
   }
+}
 
-.more-products-nav-btn-container {
-  position: relative;
-  height: 300px;
+  .more-products-nav-btn-container {
+    position: relative;
+    height: 300px;
   }
 
   .left-nav {
@@ -577,7 +578,7 @@ body, html {
     }
 
   }
-}
+
 
 
 /*our partners*/
@@ -699,7 +700,7 @@ footer {
 
 
     input[type="text"] {
-      min-width: 200px;
+      width: 200px;
       height: 40px;
       padding: 10px;
     }
