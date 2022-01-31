@@ -1,0 +1,145 @@
+.interior-design {
+  background-color: #F2F2F2;
+  padding: 80px 0 30px 0;
+
+  .interior-design-item {
+    display: block;
+    margin-top: 20px;
+    height: 350px;
+
+    .interior-design-img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .with-inner-txt {
+    position: relative;
+
+    .inner-txt {
+      text-align: left;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      height: 60%;
+      width: 80%;
+      background-color: #ffffff;
+      left: 5%;
+      bottom: 10%;
+
+      .interior-design-txt-one {
+        color: #A7A7A7;
+        font-size: 20px;
+      }
+
+      .interior-design-txt-two {
+        font-size: 23px;
+        font-weight: lighter;
+      }
+
+    }
+
+    .rotate {
+      text-align: left;
+      //transform: rotate(90deg);
+      font-size: 40px;
+      color: #C4C4C4;
+      font-weight: lighter;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .interior-design-item {
+      height: auto !important;
+    }
+
+    .inner-txt {
+      width: 50% !important;
+      height: 50% !important;
+    }
+
+    .interior-design-gallery {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 150px;
+    }
+
+    .with-inner-txt {
+      grid-column: span 3;
+      grid-row: span 4;
+      overflow: hidden;
+    }
+
+    .without-inner-txt {
+      grid-column: span 2;
+      grid-row: span 2;
+      overflow: hidden;
+    }
+  }
+}
+
+
+.more-products-title {
+  margin: 30px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .more-products-title {
+    text-align: left !important;
+  }
+}
+
+.more-products-nav-btn-container {
+  position: relative;
+  height: 300px;
+}
+
+.left-nav {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+}
+
+
+.right-nav {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+}
+
+.more-products-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 300px;
+
+  .more-products-image {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+
+}

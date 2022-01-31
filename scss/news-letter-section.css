@@ -1,0 +1,55 @@
+.newsletter {
+  background-image: linear-gradient(to right, #181D01, #000000, #262C03, #000000, #24280C);
+  padding: 30px 0;
+}
+.newsletter .newsletter-items {
+  color: #ffffff;
+  display: block;
+}
+.newsletter .newsletter-items .text-one {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px auto !important;
+}
+.newsletter .newsletter-items .text-two {
+  text-align: center;
+  flex-direction: column;
+  align-self: center;
+  margin: 30px auto !important;
+  font-size: 20px;
+}
+.newsletter .newsletter-items .send-mail-grid {
+  flex-direction: column;
+  align-self: center;
+  margin: 30px auto !important;
+}
+.newsletter .newsletter-items .send-mail-grid table, .newsletter .newsletter-items .send-mail-grid th, .newsletter .newsletter-items .send-mail-grid td {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+  padding: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .newsletter .newsletter-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    vertical-align: middle;
+  }
+  .newsletter .newsletter-items .text-one {
+    margin: 0 !important;
+  }
+  .newsletter .newsletter-items .text-two {
+    margin: 0 !important;
+  }
+  .newsletter .newsletter-items .send-mail-grid {
+    margin: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=news-letter-section.css.map */

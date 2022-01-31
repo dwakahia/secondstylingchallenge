@@ -1,0 +1,31 @@
+.our-partners {
+  background-color: #FAFAFA;
+  padding: 100px 0 40px;
+
+  .partners-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+  }
+
+  .partner-images {
+    margin-top: 50px;
+    //display: grid;
+    //grid-gap: 20px;
+    //grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    //grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .partner-img {
+    width: 100px;
+    object-fit: fill;
+  }
+
+  .partner-img-item {
+    margin: 10px;
+  }
+}

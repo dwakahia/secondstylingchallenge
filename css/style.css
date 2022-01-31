@@ -4629,6 +4629,7 @@ body, html {
   margin: 0 auto;
   height: auto; }
 
+/*hero section*/
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/sink.jpg");
   height: 95%;
@@ -4747,6 +4748,7 @@ body, html {
   .hero-image header nav .services {
     border-right: none; } }
 
+/*new collection*/
 .collection {
   padding: 50px 0 60px;
   background-color: #F2F2F2; }
@@ -5070,7 +5072,7 @@ body, html {
 .our-partners .partner-img-item {
   margin: 10px; }
 
-/*new letter*/
+/*news letter*/
 .newsletter {
   background-image: linear-gradient(to right, #181D01, #000000, #262C03, #000000, #24280C);
   padding: 30px 0; }

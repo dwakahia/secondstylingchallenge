@@ -1,0 +1,25 @@
+.our-partners {
+  background-color: #FAFAFA;
+  padding: 100px 0 40px;
+}
+.our-partners .partners-title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.our-partners .partner-images {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-partners .partner-img {
+  width: 100px;
+  object-fit: fill;
+}
+.our-partners .partner-img-item {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=our-partners-section.css.map */

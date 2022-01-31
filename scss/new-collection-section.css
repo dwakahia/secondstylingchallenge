@@ -1,0 +1,104 @@
+.collection {
+  padding: 50px 0 60px;
+  background-color: #F2F2F2;
+}
+.collection .new-collection-title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.gallery_one {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .new-collection-title {
+    text-align: left !important;
+  }
+
+  .gallery_one {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 75px;
+  }
+
+  .biget {
+    grid-column: span 5;
+    grid-row: span 5;
+    overflow: hidden;
+  }
+
+  .bathtub {
+    grid-column: span 7;
+    grid-row: span 3;
+    overflow: hidden;
+  }
+
+  .tiles {
+    grid-column: span 4;
+    grid-row: span 2;
+    overflow: hidden;
+  }
+
+  .doors {
+    grid-column: span 3;
+    grid-row: span 2;
+    overflow: hidden;
+  }
+
+  .image-item {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .image-item {
+    margin-top: 20px;
+    height: 200px;
+  }
+}
+.new-collection-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-item {
+  display: block;
+  position: relative;
+}
+
+.overlay {
+  background: black;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.center-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+.center-text span {
+  display: block;
+}
+.center-text .first-txt {
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid #ffffff;
+}
+.center-text .second-txt {
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=new-collection-section.css.map */
