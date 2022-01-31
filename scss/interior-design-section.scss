@@ -1,3 +1,15 @@
+@mixin design-nav-btn{
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+}
+
 .interior-design {
   background-color: #F2F2F2;
   padding: 80px 0 30px 0;
@@ -102,30 +114,14 @@
 }
 
 .left-nav {
-  position: absolute;
+  @include design-nav-btn;
   left: -20px;
-  top: 50%;
-  width: 80px;
-  height: 80px;
-  background-color: #222222;
-  color: #ffffff;
-  text-align: center;
-  line-height: 80px;
-  font-size: 30px;
 }
 
 
 .right-nav {
-  position: absolute;
+  @include design-nav-btn;
   right: -20px;
-  top: 50%;
-  width: 80px;
-  height: 80px;
-  background-color: #222222;
-  color: #ffffff;
-  text-align: center;
-  line-height: 80px;
-  font-size: 30px;
 }
 
 .more-products-wrapper {

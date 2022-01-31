@@ -6215,7 +6215,6 @@ body, html {
 .left-circle {
   position: absolute;
   top: 50%;
-  left: 10%;
   background-color: #B1B0B0;
   height: 60px;
   width: 60px;
@@ -6224,20 +6223,21 @@ body, html {
   text-align: center;
   line-height: 60px;
   font-size: 30px;
+  left: 10%;
 }
 
 .right-circle {
   position: absolute;
   top: 50%;
-  right: 10%;
   background-color: #B1B0B0;
-  width: 60px;
   height: 60px;
-  text-align: center;
+  width: 60px;
   color: #ffffff;
   border-radius: 50%;
+  text-align: center;
   line-height: 60px;
   font-size: 30px;
+  right: 10%;
 }
 
 @media screen and (max-width: 1260px) {
@@ -6564,7 +6564,6 @@ body, html {
 
 .left-nav {
   position: absolute;
-  left: -20px;
   top: 50%;
   width: 80px;
   height: 80px;
@@ -6573,11 +6572,11 @@ body, html {
   text-align: center;
   line-height: 80px;
   font-size: 30px;
+  left: -20px;
 }
 
 .right-nav {
   position: absolute;
-  right: -20px;
   top: 50%;
   width: 80px;
   height: 80px;
@@ -6586,6 +6585,7 @@ body, html {
   text-align: center;
   line-height: 80px;
   font-size: 30px;
+  right: -20px;
 }
 
 .more-products-wrapper {

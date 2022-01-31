@@ -1,9 +1,11 @@
+$bg-color: #E8E8E8;
+
 footer {
-  background-color: #E8E8E8;
+  background-color: $bg-color;
 
   .top-footer {
     padding: 50px 0;
-    background-color: #E8E8E8;
+    background-color: $bg-color;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 

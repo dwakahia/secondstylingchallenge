@@ -1,3 +1,21 @@
+
+$text-color: #ffffff;
+$nav-btn-bg-color: #B1B0B0;
+
+@mixin nav-btn {
+  position: absolute;
+  top: 50%;
+  background-color: $nav-btn-bg-color;
+  height: 60px;
+  width: 60px;
+  color: $text-color;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/sink.jpg");
   height: 95%;
@@ -12,7 +30,7 @@
     right: 0;
     left: 0;
     width: 100%;
-    color: #ffffff;
+    color: $text-color;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px 10px;
     z-index: 1;
@@ -33,7 +51,7 @@
 
 
       a {
-        color: #ffffff;
+        color: $text-color;
         text-decoration: none;
         padding: 5px 10px;
         font-size: 12px;
@@ -41,7 +59,7 @@
 
 
       .services {
-        border-right: 3px solid #ffffff;
+        border-right: 3px solid $text-color;
         height: 50px;
       }
 
@@ -70,7 +88,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: $text-color;
 
   h1 {
     font-size: 5vw;
@@ -85,8 +103,8 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  color: $text-color;
+  border-bottom: 2px solid $text-color;
 
   p {
     margin: 30px 0 20px;
@@ -95,31 +113,13 @@
 }
 
 .left-circle {
-  position: absolute;
-  top: 50%;
+  @include nav-btn;
   left: 10%;
-  background-color: #B1B0B0;
-  height: 60px;
-  width: 60px;
-  color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 30px;
 }
 
 .right-circle {
-  position: absolute;
-  top: 50%;
+  @include nav-btn;
   right: 10%;
-  background-color: #B1B0B0;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 50%;
-  line-height: 60px;
-  font-size: 30px;
 }
 
 
