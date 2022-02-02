@@ -6135,7 +6135,7 @@ body, html {
 /*hero section*/
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/sink.jpg");
-  height: 95%;
+  height: 85%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6153,12 +6153,20 @@ body, html {
   z-index: 1;
 }
 .hero-image header img {
-  height: 40px;
+  height: 50px;
 }
 .hero-image header nav {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+.hero-image header nav .nav-links {
+  display: flex;
   justify-content: space-between;
+}
+.hero-image header nav .nav-links .right-links {
+  margin-left: 10px;
+  font-weight: lighter !important;
 }
 .hero-image header nav li {
   display: inline-block;
@@ -6167,10 +6175,13 @@ body, html {
 .hero-image header nav a {
   color: #ffffff;
   text-decoration: none;
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: bolder;
 }
-.hero-image header nav .services {
+.hero-image header nav .vertical-bar {
+  padding-right: 10px;
   border-right: 3px solid #ffffff;
   height: 50px;
 }
@@ -6183,7 +6194,7 @@ body, html {
   display: none;
 }
 .hero-image header nav .show {
-  display: block;
+  display: block !important;
 }
 
 .hero-text {
@@ -6201,7 +6212,7 @@ body, html {
 .see-more {
   text-align: center;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
@@ -6209,7 +6220,7 @@ body, html {
 }
 .see-more p {
   margin: 30px 0 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .left-circle {
@@ -6223,7 +6234,7 @@ body, html {
   text-align: center;
   line-height: 60px;
   font-size: 30px;
-  left: 10%;
+  left: 5%;
 }
 
 .right-circle {
@@ -6237,7 +6248,7 @@ body, html {
   text-align: center;
   line-height: 60px;
   font-size: 30px;
-  right: 10%;
+  right: 5%;
 }
 
 @media screen and (max-width: 1260px) {
@@ -6254,16 +6265,20 @@ body, html {
     list-style: none;
     margin-top: 10px;
   }
-  .hero-image header nav ul {
+  .hero-image header nav .right-links {
+    margin-left: 0 !important;
+  }
+  .hero-image header nav .nav-links {
     display: none;
   }
-  .hero-image header nav .services {
+  .hero-image header nav .vertical-bar {
     border-right: none;
   }
 }
 /*new collection*/
 .collection {
-  padding: 50px 0 60px;
+  height: auto;
+  padding: 50px 0 100px;
   background-color: #F2F2F2;
 }
 .collection .new-collection-title {
@@ -6272,10 +6287,14 @@ body, html {
 }
 
 .gallery_one {
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 @media screen and (min-width: 768px) {
+  .collection {
+    height: 83% !important;
+  }
+
   .new-collection-title {
     text-align: left !important;
   }
@@ -6284,7 +6303,7 @@ body, html {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: 75px;
+    grid-auto-rows: 100px;
   }
 
   .biget {
@@ -6367,7 +6386,8 @@ body, html {
 
 /*new products*/
 .newprods {
-  padding: 30px 0 30px;
+  height: auto;
+  padding: 40px 0 30px;
   background-color: #ffffff;
 }
 .newprods .newprods-title {
@@ -6432,12 +6452,16 @@ body, html {
   grid-auto-rows: auto;
 }
 @media screen and (min-width: 768px) {
+  .newprods .newprods {
+    height: 105% !important;
+  }
   .newprods .newprods-title {
     text-align: left !important;
   }
   .newprods .new-prod-gallery {
     display: grid;
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 100px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
   }
@@ -6449,12 +6473,16 @@ body, html {
   }
 }
 @media screen and (min-width: 1024px) {
+  .newprods .newprods {
+    height: 105% !important;
+  }
   .newprods .newprods-title {
     text-align: left !important;
   }
   .newprods .new-prod-gallery {
     display: grid;
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 100px;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
   }
@@ -6466,9 +6494,9 @@ body, html {
   }
 }
 .newprods .view-products-btn {
-  margin: 30px auto;
+  margin: 60px auto;
   background-color: #000000;
-  padding: 20px 30px;
+  padding: 15px 30px;
   color: #ffffff;
   max-width: 300px;
   text-align: center;
@@ -6606,6 +6634,7 @@ body, html {
 .our-partners {
   background-color: #FAFAFA;
   padding: 100px 0 40px;
+  height: auto;
 }
 .our-partners .partners-title {
   text-align: center;
@@ -6614,29 +6643,39 @@ body, html {
 }
 .our-partners .partner-images {
   margin-top: 50px;
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .our-partners .partner-img {
-  width: 100px;
+  max-width: 150px;
+  height: auto;
   object-fit: fill;
 }
 .our-partners .partner-img-item {
   margin: 10px;
 }
+@media screen and (min-width: 1440px) {
+  .our-partners {
+    height: 35%;
+  }
+}
 
 /*news letter*/
 .newsletter {
+  height: auto;
   background-image: linear-gradient(to right, #181D01, #000000, #262C03, #000000, #24280C);
   padding: 30px 0;
 }
 .newsletter .newsletter-items {
   color: #ffffff;
   display: block;
+  height: 100%;
 }
 .newsletter .newsletter-items .text-one {
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -6646,6 +6685,7 @@ body, html {
   margin: 30px auto !important;
 }
 .newsletter .newsletter-items .text-two {
+  height: 100%;
   text-align: center;
   flex-direction: column;
   align-self: center;
@@ -6653,6 +6693,7 @@ body, html {
   font-size: 20px;
 }
 .newsletter .newsletter-items .send-mail-grid {
+  height: 100%;
   flex-direction: column;
   align-self: center;
   margin: 30px auto !important;
@@ -6664,12 +6705,16 @@ body, html {
   margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
+  .newsletter .newsletter {
+    height: 25% !important;
+  }
   .newsletter .newsletter-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     vertical-align: middle;
+    height: 100%;
   }
   .newsletter .newsletter-items .text-one {
     margin: 0 !important;
@@ -6693,6 +6738,9 @@ footer .top-footer {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 footer .top-footer .top-footer-item {
+  margin-top: 20px;
+}
+footer .top-footer .top-footer-item .bottom {
   margin-top: 20px;
 }
 footer .top-footer input[type=text] {

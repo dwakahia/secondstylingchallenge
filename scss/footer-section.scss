@@ -11,6 +11,10 @@ footer {
 
     .top-footer-item {
       margin-top: 20px;
+
+      .bottom {
+        margin-top: 20px;
+      }
     }
 
 
@@ -29,6 +33,14 @@ footer {
       border: 0;
       -webkit-appearance: none;
     }
+
+
+    //@media screen and (min-width: 700px) {
+    //  .form-item {
+    //    float: right;
+    //  }
+    //}
+
 
     li {
       list-style: none;
